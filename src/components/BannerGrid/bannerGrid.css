@@ -1,0 +1,56 @@
+.main-container {
+  position: relative;
+}
+
+.image-banner {
+  width: 100%;
+}
+
+.slider-control-centerright {
+  display: none;
+}
+
+.slider-control-centerleft {
+  display: none;
+}
+
+.title-banner {
+  position: absolute;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 1;
+  top: 77px;
+  left: 271px;
+}
+
+.subtitle-banner {
+  position: absolute;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 1;
+  top: 164px;
+  left: 271px;
+  max-width: 355px;
+}
+
+.button-banner {
+  color: #fff;
+  position: absolute;
+  display: inline-flex;
+  padding: 7px 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--color-1500-faa-500, #faa500);
+  z-index: 1;
+  top: 245px;
+  left: 271px;
+}

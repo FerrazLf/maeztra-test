@@ -1,0 +1,25 @@
+.partners-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 70px 40px;
+}
+
+.title-partner {
+  color: var(--color-2-500, #353535);
+  text-align: center;
+  font-family: Titillium Web;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media (max-width: 375px), (max-width: 420px) {
+  .title-partner{
+    display: none;
+  }
+
+  .partners-container {
+    display: none;
+  }
+}

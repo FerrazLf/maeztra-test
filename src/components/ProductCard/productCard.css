@@ -1,0 +1,42 @@
+.product-card-container {
+  display: flex;
+  margin-left: 75px;
+}
+
+.colors-card::after {
+  display: inline-block;
+  background-image: url(./../../assets/colors.png);
+  content: "";
+  width: 132px;
+  height: 27px;
+}
+
+.price {
+  color: var(--color-2-500, #353535);
+  font-family: Titillium Web;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.product-name {
+  color: var(--color-2-900, #000);
+  font-family: Titillium Web;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.product-desc {
+  color: var(--color-2-900, #000);
+  font-family: Titillium Web;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+  max-width: 73%;
+  padding: 10px 0 25px;
+}

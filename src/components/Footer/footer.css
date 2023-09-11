@@ -1,0 +1,87 @@
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--color-3-500, #fafafa);
+  margin: 0px 0 45px;
+}
+.footer-title {
+  color: var(--color-2-500, #353535);
+  font-family: Titillium Web;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 112.5% */
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  color: var(--color-2-900, #000);
+  font-family: Titillium Web;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+
+.container-footer-icon {
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--color-2-500, #353535);
+  position: relative;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+}
+
+.payments-methods {
+  display: flex;
+  align-items: center;
+}
+
+.footer-icon {
+  padding: 10px;
+}
+
+.dev-icon {
+  display: flex;
+}
+
+.dev-icon p {
+  color: white;
+}
+
+.title-dev::after {
+  display: inline-block;
+  content: "";
+  background: url(../../assets/logoFooter.png), lightgray 50% / cover no-repeat;
+  width: 65px;
+  height: 26px;
+  position: absolute;
+  right: 332px;
+  bottom: 2px;
+  background-color: transparent;
+}
+
+.title-dev-2 {
+  padding-left: 25px;
+}
+.title-dev-2::after {
+  display: inline-block;
+  content: "";
+  background: url(../../assets/logoMaeztra.png), lightgray 50% / cover no-repeat;
+  width: 119px;
+  height: 23px;
+  position: absolute;
+  right: 184px;
+  bottom: 6px;
+  background-color: transparent;
+}

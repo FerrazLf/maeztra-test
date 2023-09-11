@@ -1,0 +1,19 @@
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 161px;
+}
+
+.text-card {
+  color: var(--color-2-900, #000);
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 400px;
+}
+
+.banner-grid {
+  max-width: 700px;
+}
