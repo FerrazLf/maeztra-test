@@ -1,42 +1,77 @@
-.product-card-container {
-  display: flex;
-  margin-left: 75px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
-.colors-card::after {
-  display: inline-block;
-  background-image: url(./../../assets/colors.png);
-  content: "";
-  width: 132px;
-  height: 27px;
-}
-
-.price {
+.product-card__text {
   color: var(--color-2-500, #353535);
+  text-align: center;
   font-family: Titillium Web;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 80px;
+}
+
+.product-card__item {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+.product-card__colors {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+}
+
+.product-card__color {
+  width: 20px;
+  height: 20px;
+}
+
+.product-card__button {
+  background: #faa500;
+  color: #fff;
+  text-align: center;
+  font-family: "Titillium Web";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.product-card__price {
+  color: var(--color-2-500, #353535);
+  font-family: "Titillium Web";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-
-.product-name {
+.product-card__title {
   color: var(--color-2-900, #000);
-  font-family: Titillium Web;
+  font-family: "Titillium Web";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.product-desc {
+.product-card__description {
   color: var(--color-2-900, #000);
-  font-family: Titillium Web;
-  font-size: 16px;
+  font-family: "Titillium Web";
+  font-size: 12px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
   opacity: 0.5;
-  max-width: 73%;
-  padding: 10px 0 25px;
+}
+
+.nuka-nav-button.nuka-nav-button-prev {
+  background: transparent;
+  color: black;
+}
+
+.nuka-nav-button.nuka-nav-button-next {
+  background: transparent;
+  color: black;
 }

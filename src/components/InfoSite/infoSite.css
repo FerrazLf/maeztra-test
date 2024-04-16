@@ -1,7 +1,18 @@
+.box-info1 {
+  border-radius: 4px;
+  background: var(--color-4-500, #efefef);
+  padding: 0px 60px;
+  position: relative;
+}
+
 .info-container {
   display: flex;
   justify-content: space-evenly;
-  margin: 0 50px 50px;
+  margin-bottom: 50px;
+}
+
+.box-info {
+  display: none;
 }
 
 .title-site {
@@ -12,15 +23,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin: 32px 0 24px;
 }
-
-.box-info {
-  border-radius: 4px;
-  background: var(--color-4-500, #efefef);
-  padding: 0px 60px;
-  position: relative;
-}
-
 .title-box {
   color: var(--color-2-500, #353535);
   font-family: Titillium Web;
@@ -43,4 +47,20 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media only screen and (min-width: 768px) {
+  .info-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+  }
+
+  .box-info {
+    display: block;
+    border-radius: 4px;
+    background: var(--color-4-500, #efefef);
+    padding: 0px 60px;
+    position: relative;
+  }
 }

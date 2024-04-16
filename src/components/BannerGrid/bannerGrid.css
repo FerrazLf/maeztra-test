@@ -1,44 +1,37 @@
-.main-container {
-  position: relative;
-}
-
-.image-banner {
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+.banner-grid__carousel {
   width: 100%;
 }
 
-.slider-control-centerright {
-  display: none;
-}
-
-.slider-control-centerleft {
-  display: none;
+.main-container {
+  position: relative;
 }
 
 .title-banner {
   position: absolute;
   color: #fff;
   font-family: Montserrat;
-  font-size: 40px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  left: 50px;
+  top: 18px;
   z-index: 1;
-  top: 77px;
-  left: 271px;
 }
 
 .subtitle-banner {
   position: absolute;
   color: #fff;
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   z-index: 1;
-  top: 164px;
-  left: 271px;
-  max-width: 355px;
+  left: 50px;
+  bottom: 110px;
 }
 
 .button-banner {
@@ -51,6 +44,62 @@
   border-radius: 10px;
   background: var(--color-1500-faa-500, #faa500);
   z-index: 1;
-  top: 245px;
-  left: 271px;
+  bottom: 60px;
+  left: 50px;
+}
+
+.nuka-nav-button {
+  background: transparent;
+  color: black;
+}
+
+.nuka-nav-button.nuka-nav-button-prev {
+  background: transparent;
+  color: black;
+}
+
+.nuka-nav-button.nuka-nav-button-next {
+  background: transparent;
+  color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  .image-banner {
+    width: 100%;
+  }
+
+  .slider-control-centerright {
+    display: none;
+  }
+
+  .slider-control-centerleft {
+    display: none;
+  }
+
+  .title-banner {
+    position: absolute;
+    top: 77px;
+    left: 271px;
+  }
+
+  .subtitle-banner {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    z-index: 1;
+    top: 164px;
+    left: 271px;
+    max-width: 355px;
+  }
+
+  .button-banner {
+    position: absolute;
+    z-index: 1;
+    bottom: 245px;
+    left: 271px;
+  }
+
+  .nuka-nav-button {
+    display: block;
+  }
 }

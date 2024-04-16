@@ -1,10 +1,11 @@
-.partners-container {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0px 70px 40px;
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+.partners-grid__container {
+  margin: 26px;
 }
 
-.title-partner {
+.partners-grid__title {
   color: var(--color-2-500, #353535);
   text-align: center;
   font-family: Titillium Web;
@@ -12,14 +13,24 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-top: 74px;
 }
 
-@media (max-width: 375px), (max-width: 420px) {
-  .title-partner{
-    display: none;
+.partners-grid__image {
+  display: none;
+}
+@media (min-width: 768px) {
+  .partners-grid__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
-  .partners-container {
-    display: none;
+  img {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .partners-grid__image {
+    display: block;
   }
 }

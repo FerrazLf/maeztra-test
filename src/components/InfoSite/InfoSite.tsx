@@ -11,7 +11,7 @@ function InfoSite() {
     <>
       <h1 className="title-site">Por que comprar na Maeztra?</h1>
       <div className="info-container">
-        <span className="box-info">
+        <span className="box-info1">
           <img className="Icon-info" src={Planet} alt="" />
           <p className="title-box">Produtos importados</p>
           <p className="subtitle-box">Produto de Alta Qualidade</p>

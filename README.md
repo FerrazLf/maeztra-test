@@ -1,6 +1,6 @@
 # Layout desktop
 
-Realizado o layout em Desktop com medidas 1536px x 496px estático (somente esta dimensão está produzida)
+Realizado o layout conforme modelo disponibilizado no figma
 
 # Rotas
 
@@ -13,4 +13,4 @@ Utilizado react.js como base para construção da página e HTML e CSS para a co
 
 # Componentes
 
-Contruído ao todo de 10 componentes para compor a página e também foram feitos componentes para adiocnar ícones e imagens.
+Contruído ao todo de 11 componentes para compor a página e também foram feitos componentes para adiocnar ícones e imagens.

@@ -1,10 +1,7 @@
-.card-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 161px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
-.text-card {
+.info-card__text {
   color: var(--color-2-900, #000);
   font-family: Titillium Web;
   font-size: 14px;
@@ -14,6 +11,14 @@
   max-width: 400px;
 }
 
-.banner-grid {
-  max-width: 700px;
+.info-card__container {
+  margin: 26px;
+}
+
+@media only screen and (min-width: 768px) {
+  .info-card__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 58px 0 120px;
+  }
 }

@@ -1,5 +1,6 @@
 import Bannerfull from "./../../assets/bannerfull.png";
-import Carousel from "nuka-carousel";
+import BannerMobile from "./../../assets/bannerMobile.png";
+import { Carousel } from "nuka-carousel";
 import "./bannerGrid.css";
 function BannerGrid() {
   return (
@@ -9,11 +10,25 @@ function BannerGrid() {
         Confiras os melhores looks para combinar com você nesse Outono
       </p>
       <button className="button-banner">Conferir</button>
-      <Carousel autoplay={true} wrapAround={true}>
-        <img className="image-banner" src={Bannerfull} alt="" />
-        <img className="image-banner" src={Bannerfull} alt="" />
-        <img className="image-banner" src={Bannerfull} alt="" />
-      </Carousel>
+      <div className="banner-grid__carousel">
+        <Carousel autoplay showArrows="always" wrapMode="wrap">
+          <picture className="banner-grid__image">
+            <source media="(max-width: 767px)" srcSet={BannerMobile} />
+            <source media="(min-width: 768px)" srcSet={Bannerfull} />
+            <img src={Bannerfull} alt="Banner" />
+          </picture>
+          <picture>
+            <source media="(max-width: 767px)" srcSet={BannerMobile} />
+            <source media="(min-width: 768px)" srcSet={Bannerfull} />
+            <img src={Bannerfull} alt="Banner" />
+          </picture>
+          <picture>
+            <source media="(max-width: 767px)" srcSet={BannerMobile} />
+            <source media="(min-width: 768px)" srcSet={Bannerfull} />
+            <img src={Bannerfull} alt="Banner" />
+          </picture>
+        </Carousel>
+      </div>
     </div>
   );
 }

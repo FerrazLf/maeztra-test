@@ -1,11 +1,14 @@
-.title-ad-container {
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+.top-bar__container {
   background: black;
 }
 
-.title-ad {
+.top-bar__title {
   color: #fff;
   text-align: center;
-  font-family: Titillium Web;
+  font-family: Titillium Web, sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -14,11 +17,56 @@
 }
 
 .header-container {
-  display: flex;
-  justify-content: space-evenly;
   background: #fff;
-  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+}
+
+.header-container__mobile {
+  display: flex;
   align-items: center;
-  height: 62px;
-  padding: 10px;
+  justify-content: space-between;
+
+  padding: 20px 32px;
+}
+
+.header-container__mobile--left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header-container__mobile--right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-container__menu-icon {
+  display: flex;
+}
+
+.header-container__desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-container__desktop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+    padding: 10px;
+  }
+
+  .header-container__links {
+    display: flex;
+  }
+
+  .header-title {
+    margin: 10px;
+  }
+
+  .header-container__mobile {
+    display: none;
+  }
 }
