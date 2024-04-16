@@ -13,4 +13,4 @@ Utilizado react.js como base para construção da página e HTML e CSS para a co
 
 # Componentes
 
-Contruído ao todo de 11 componentes para compor a página e também foram feitos componentes para adiocnar ícones e imagens.
+Contruído ao todo de 11 componentes para compor a página e também foram feitos componentes para adiocnar ícones 
